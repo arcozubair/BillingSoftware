@@ -1,0 +1,12 @@
+{
+  "name": "billing-software",
+  "version": "1.0.0",
+  "scripts": {
+    "start:Frontend": "cd Frontend && npm run dev",
+    "start:Backend": "cd Backend && npm run start",
+    "start": "concurrently \"npm run start:Frontend\" \"npm run start:Backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
